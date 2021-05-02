@@ -27,7 +27,6 @@ class Compiler:
         return self._code
 
     def compile(self, markdown=False):
-        print(self._tokens)
         if not self._parser.tree:
             self._parser.parse()
         self._code = ""
